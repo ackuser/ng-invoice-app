@@ -1,0 +1,22 @@
+@import '_fonts';
+
+:host {
+    width: 89px;
+    height: 48px;
+    border-radius: 24px;
+    background: $third-light-1;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        background: $third-light-2;
+    }
+
+    .el {
+        @extend .h3-2;
+        color: white;
+        align-self: center;
+    }
+}
