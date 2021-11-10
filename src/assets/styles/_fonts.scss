@@ -1,0 +1,73 @@
+@import '_colors';
+
+@mixin h1 {
+    color: $secondary-dark-2;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: -1;
+
+    // @media screen and (min-width: 415px) and (max-width: 1023px) and (orientation:portrait) {
+    //     font-size: 34px;
+    // }
+
+    // @media screen and (min-width: 1024px) {
+    //     font-size: 48px;
+    //     text-align: start;
+    // }
+}
+
+@mixin h2 {
+    color: $secondary-dark-2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: -.63;
+}
+
+@mixin h3 {
+    color: $secondary-dark-2;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: -.8;
+}
+
+@mixin h3-2 {
+    color: $secondary-dark-2;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: -.25;
+}
+
+@mixin body1 {
+    color: $secondary-dark-2;
+    font-size: 12px;
+    font-weight: medium;
+    line-height: 15px;
+    letter-spacing: -.25;
+}
+
+@mixin body2 {
+    color: $secondary-dark-2;
+    font-size: 11px;
+    font-weight: medium;
+    line-height: 18px;
+    letter-spacing: -.23;
+}
+
+@mixin review($size: 13px, $color: $magent-verydark) {
+    color: $color;
+    font-size: $size;
+    font-weight: 700;
+    text-align: center;
+}
+
+@mixin buyer($size: 13px, $color: $white, $weight: 500, $lineHeight: normal) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: start;
+    line-height: $lineHeight;
+}
