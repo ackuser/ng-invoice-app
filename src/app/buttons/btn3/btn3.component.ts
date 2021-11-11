@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { BtnBaseComponent } from '../btn-base/btn-base.component';
 
 @Component({
   selector: 'app-btn3',
   templateUrl: './btn3.component.html',
   styleUrls: ['./btn3.component.scss']
 })
-export class Btn3Component implements OnInit {
+export class Btn3Component extends BtnBaseComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() { 
+    super();
   }
 
 }

@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn-base',
   template: ''
 })
-export class BtnBaseComponent implements OnInit {
+export class BtnBaseComponent {
 
-  constructor() { }
+  @Output() OnClick: EventEmitter<any> = new EventEmitter<any>();
 
-  ngOnInit(): void {
+  @HostListener('click', ['$event.target'])
+  onClick(btn: any) {
+    console.log('button', btn);
   }
-
 }

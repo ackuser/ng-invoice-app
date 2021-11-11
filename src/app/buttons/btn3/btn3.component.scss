@@ -1,0 +1,12 @@
+@import '_fonts';
+@import '_buttons';
+
+:host {
+    @include btn(73px, 48px, $third-dark-1, $secondary-light-1, $secondary-dark-1);
+    margin: auto;
+
+    .el {
+        @extend .h3-2;
+        align-self: center;
+    }
+}
