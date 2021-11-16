@@ -1,0 +1,10 @@
+@import '_fonts';
+@import '_buttons';
+
+.container {
+    @include btn(133px, 48px, $primary-dark-2, $secondary-dark-2, $secondary-light-2);
+
+    &--dark {
+        @include btn(133px, 48px, $primary-dark-2, $secondary-dark-2, $secondary-light-1);
+    }
+}

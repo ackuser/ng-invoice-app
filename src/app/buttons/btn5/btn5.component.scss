@@ -3,11 +3,4 @@
 
 :host {
     @include btn(89px, 48px, $third-light-1, $third-light-2, white);
-    margin: auto;
-
-    .el {
-        @extend .h3-2;
-        // color: white;
-        align-self: center;
-    }
 }

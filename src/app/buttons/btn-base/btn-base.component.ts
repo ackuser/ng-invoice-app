@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn-base',
@@ -7,6 +7,8 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 export class BtnBaseComponent {
 
   @Output() OnClick: EventEmitter<any> = new EventEmitter<any>();
+  
+  @Input() dark = false;
 
   @HostListener('click', ['$event.target'])
   onClick(btn: any) {

@@ -1,0 +1,6 @@
+@import '_fonts';
+@import '_buttons';
+
+:host {
+    @include btn(350px, 48px, $third-dark-1, $secondary-light-1, $secondary-dark-1);
+}

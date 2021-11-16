@@ -9,6 +9,7 @@ import { Btn2Component } from './buttons/btn2/btn2.component';
 import { Btn3Component } from './buttons/btn3/btn3.component';
 import { Btn4Component } from './buttons/btn4/btn4.component';
 import { Btn5Component } from './buttons/btn5/btn5.component';
+import { Btn6Component } from './buttons/btn6/btn6.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { Btn5Component } from './buttons/btn5/btn5.component';
     Btn2Component,
     Btn3Component,
     Btn4Component,
-    Btn5Component
+    Btn5Component,
+    Btn6Component
   ],
   imports: [
     BrowserModule,
