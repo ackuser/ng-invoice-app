@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,7 @@ import { Btn3Component } from './buttons/btn3/btn3.component';
 import { Btn4Component } from './buttons/btn4/btn4.component';
 import { Btn5Component } from './buttons/btn5/btn5.component';
 import { Btn6Component } from './buttons/btn6/btn6.component';
+import { TextFieldFormComponent } from './text-field-form/text-field-form.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { Btn6Component } from './buttons/btn6/btn6.component';
     Btn3Component,
     Btn4Component,
     Btn5Component,
-    Btn6Component
+    Btn6Component,
+    TextFieldFormComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
