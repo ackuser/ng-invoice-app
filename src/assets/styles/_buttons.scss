@@ -3,10 +3,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-
-    .el {
-        @extend .h3-2;
-    }
 }
 
 @mixin btn-common($width, $height,
