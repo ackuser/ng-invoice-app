@@ -34,7 +34,9 @@
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": [ "src/assets/styles"]
+              "includePaths": [
+                "src/assets/styles"
+              ]
             },
             "scripts": []
           },
@@ -105,9 +107,42 @@
               "src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": [ "src/assets/styles"]
+              "includePaths": [
+                "src/assets/styles"
+              ]
             },
             "scripts": []
+          }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "invoiceApp:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "invoiceApp:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "invoiceApp:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "invoiceApp:serve:production"
+            }
           }
         }
       }
