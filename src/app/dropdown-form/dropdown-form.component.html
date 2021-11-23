@@ -1,0 +1,22 @@
+<span class="field">
+  <ng-content></ng-content>
+</span>
+<input
+  class="input"
+  [ngClass]="{ panelIsOpen: isActive }"
+  type="text"
+  [formControl]="control"
+  readonly
+/>
+<div class="icon">
+  <img
+    class="icon__svg"
+    src="../../assets/images/icon-arrow-down.svg"
+    alt="Plus icon"
+  />
+</div>
+<div *ngIf="isActive" class="content">
+  <span *ngFor="let item of data" class="el" (click)="setValue(item)"
+    >Net {{ item }} Day{{ item > 1 ? "s" : "" }}</span
+  >
+</div>

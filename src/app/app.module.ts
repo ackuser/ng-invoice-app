@@ -12,6 +12,7 @@ import { Btn4Component } from './buttons/btn4/btn4.component';
 import { Btn5Component } from './buttons/btn5/btn5.component';
 import { Btn6Component } from './buttons/btn6/btn6.component';
 import { TextFieldFormComponent } from './text-field-form/text-field-form.component';
+import { DropdownFormComponent } from './dropdown-form/dropdown-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TextFieldFormComponent } from './text-field-form/text-field-form.compon
     Btn4Component,
     Btn5Component,
     Btn6Component,
-    TextFieldFormComponent
+    TextFieldFormComponent,
+    DropdownFormComponent
   ],
   imports: [
     BrowserModule,
