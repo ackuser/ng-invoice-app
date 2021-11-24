@@ -13,6 +13,7 @@ import { Btn5Component } from './buttons/btn5/btn5.component';
 import { Btn6Component } from './buttons/btn6/btn6.component';
 import { TextFieldFormComponent } from './text-field-form/text-field-form.component';
 import { DropdownFormComponent } from './dropdown-form/dropdown-form.component';
+import { DatepickerFormComponent } from './datepicker-form/datepicker-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DropdownFormComponent } from './dropdown-form/dropdown-form.component';
     Btn5Component,
     Btn6Component,
     TextFieldFormComponent,
-    DropdownFormComponent
+    DropdownFormComponent,
+    DatepickerFormComponent
   ],
   imports: [
     BrowserModule,
