@@ -10,6 +10,10 @@ export class DatepickerFormComponent implements OnInit {
 
   isActive: boolean = false;
 
+  daysMap = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  monthMap = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+
   @HostListener('click') onClick(event: Event) {
     this.isActive = !this.isActive;
   }
@@ -21,4 +25,5 @@ export class DatepickerFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setMonth(arg: number) { }
 }

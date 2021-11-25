@@ -53,7 +53,7 @@
         border-radius: 8px;
         box-shadow: 0px 10px 20px hsla(232, 38%, 45%, 0.247);
         margin-top: 320px;
-        padding: 12px;
+        padding: 18px 12px;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -62,6 +62,11 @@
             height: 10%;
             display: flex;
             justify-content: space-around;
+            align-items: center;
+
+            .title {
+                align-self: flex-end;
+            }
 
             .icon-arrow {
                 width: 7px;
