@@ -13,6 +13,7 @@
 
     .code {
         @extend .h3-2;
+        flex-basis: 10%;
         &__hashtag {
             color: $secondary-dark-1;
         }
@@ -21,6 +22,7 @@
     .date,
     .name {
         @extend .h3-2-m;
+        flex-basis: 18%;
         color: $secondary-dark-1;
     }
 

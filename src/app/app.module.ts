@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +16,9 @@ import { DropdownFormComponent } from './dropdown-form/dropdown-form.component';
 import { DatepickerFormComponent } from './datepicker-form/datepicker-form.component';
 import { InvoiceRowComponent } from './invoice-row/invoice-row.component';
 import { StatusInvoiceComponent } from './status-invoice/status-invoice.component';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { StatusInvoiceComponent } from './status-invoice/status-invoice.componen
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'es-ES',
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

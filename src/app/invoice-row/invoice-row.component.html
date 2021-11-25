@@ -1,11 +1,11 @@
 <span class="code">
   <span class="code__hashtag"> # </span>
-  RT3080</span
+  {{ invoice.code }}</span
 >
-<span class="date"> Due 19 Aug 2021 </span>
-<span class="name"> Jensen Huang </span>
-<span class="amount"> £ 556.00 </span>
-<app-status-invoice [status]="InvoiceStatus.PAID"></app-status-invoice>
+<span class="date"> {{ invoice.date }} </span>
+<span class="name"> {{ invoice.name }} </span>
+<span class="amount"> £ {{ invoice.amount.toFixed(2) | currency: 'EUR' }} </span>
+<app-status-invoice [status]="invoice.status"></app-status-invoice>
 <img
 class="icon-arrow"
 src="../../assets/images/icon-arrow-right.svg"

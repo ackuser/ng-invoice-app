@@ -15,11 +15,11 @@
     }
 
     &.pending {
-        background: $pending;
+        background: $pending-bg;
     }
 
     &.draft {
-        background: $draft;
+        background: $draft-bg;
     }
 
     .dot {
