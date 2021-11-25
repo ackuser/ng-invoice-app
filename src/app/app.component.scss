@@ -1,7 +1,10 @@
+@import '_colors';
+
 :host {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 70vh;
+    background-color: $third-dark-1;
 }

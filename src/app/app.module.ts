@@ -15,6 +15,7 @@ import { TextFieldFormComponent } from './text-field-form/text-field-form.compon
 import { DropdownFormComponent } from './dropdown-form/dropdown-form.component';
 import { DatepickerFormComponent } from './datepicker-form/datepicker-form.component';
 import { InvoiceRowComponent } from './invoice-row/invoice-row.component';
+import { StatusInvoiceComponent } from './status-invoice/status-invoice.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { InvoiceRowComponent } from './invoice-row/invoice-row.component';
     TextFieldFormComponent,
     DropdownFormComponent,
     DatepickerFormComponent,
-    InvoiceRowComponent
+    InvoiceRowComponent,
+    StatusInvoiceComponent
   ],
   imports: [
     BrowserModule,

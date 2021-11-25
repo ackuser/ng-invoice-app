@@ -27,6 +27,10 @@
     @include font(12px, bold, 15px, -.25);
 }
 
+.h3-2-m {
+    @include font(12px, medium, 15px, -.25);
+}
+
 @mixin body {
     @include font(12px);
 }

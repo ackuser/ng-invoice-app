@@ -1,0 +1,60 @@
+@import '_fonts';
+
+
+:host {
+    width: 104px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px;
+
+    &.paid {
+        background: $paid-bg;
+    }
+
+    &.pending {
+        background: $pending;
+    }
+
+    &.draft {
+        background: $draft;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: $paid;
+        margin-right: 8px;
+        margin-bottom: 2px;
+
+        &--paid {
+            background: $paid;
+        }
+
+        &--pending {
+            background: $pending;
+        }
+
+        &--draft {
+            background: $draft;
+        }
+    }
+
+    .title {
+
+        &--paid {
+            color: $paid;
+        }
+
+        &--pending {
+            color: $pending;
+        }
+
+        &--draft {
+            color: $draft;
+        }
+    }
+}

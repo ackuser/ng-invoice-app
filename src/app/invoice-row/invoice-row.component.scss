@@ -1,3 +1,5 @@
+@import '_fonts';
+
 :host {
     width: 730px;
     height: 72px;
@@ -7,4 +9,27 @@
     padding: 12px 18px;
     border-radius: 8px;
     box-shadow: 0px 10px 10px -10px hsla(231, 38%, 45%, 0.10);
+    background-color: white;
+
+    .code {
+        @extend .h3-2;
+        &__hashtag {
+            color: $secondary-dark-1;
+        }
+    }
+
+    .date,
+    .name {
+        @extend .h3-2-m;
+        color: $secondary-dark-1;
+    }
+
+    .amount {
+        @extend .h3;
+    }
+
+    .icon-arrow {
+        width: 7px;
+        height: 10px;
+    }
 }
