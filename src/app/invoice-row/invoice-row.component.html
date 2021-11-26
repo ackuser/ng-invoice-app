@@ -1,13 +1,15 @@
 <span class="code">
   <span class="code__hashtag"> # </span>
-  {{ invoice.code }}</span
+  {{ invoice.id }}</span
 >
-<span class="date"> {{ invoice.date }} </span>
-<span class="name"> {{ invoice.name }} </span>
-<span class="amount"> £ {{ invoice.amount.toFixed(2) | currency: 'EUR' }} </span>
+<span class="date">
+  Due {{ invoice.paymentDue | date: 'd MMM y':undefined:'en-EN' }}
+</span>
+<span class="name"> {{ invoice.clientName }} </span>
+<span class="amount"> £ {{ invoice.total.toFixed(2) | currency: "EUR" }} </span>
 <app-status-invoice [status]="invoice.status"></app-status-invoice>
 <img
-class="icon-arrow"
-src="../../assets/images/icon-arrow-right.svg"
-alt="Right icon"
+  class="icon-arrow"
+  src="../../assets/images/icon-arrow-right.svg"
+  alt="Right icon"
 />

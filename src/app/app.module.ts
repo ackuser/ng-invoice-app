@@ -18,6 +18,9 @@ import { InvoiceRowComponent } from './invoice-row/invoice-row.component';
 import { StatusInvoiceComponent } from './status-invoice/status-invoice.component';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+import { InvoicesComponent } from './invoices/invoices.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SidebarComponent } from './sidebar/sidebar.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -34,12 +37,15 @@ registerLocaleData(localeEs);
     DropdownFormComponent,
     DatepickerFormComponent,
     InvoiceRowComponent,
-    StatusInvoiceComponent
+    StatusInvoiceComponent,
+    InvoicesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{
     provide: LOCALE_ID,

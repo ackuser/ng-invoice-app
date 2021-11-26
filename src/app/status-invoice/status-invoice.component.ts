@@ -1,4 +1,4 @@
-import { InvoiceStatus } from './../invoice-status';
+import { Status } from './../invoice';
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
 })
 export class StatusInvoiceComponent implements OnInit {
 
-  @Input() status!: InvoiceStatus;
+  @Input() status!: Status;
 
   @HostBinding('class') className: any;
 

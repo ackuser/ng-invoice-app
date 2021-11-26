@@ -1,17 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Invoice } from '../invoice';
-import { InvoiceStatus } from '../invoice-status';
+import { Invoice, Status } from '../invoice';
 
 @Component({
   selector: 'app-invoice-row',
   templateUrl: './invoice-row.component.html',
-  styleUrls: ['./invoice-row.component.scss']
+  styleUrls: ['./invoice-row.component.scss'],
 })
 export class InvoiceRowComponent implements OnInit {
 
   @Input() invoice!: Invoice;
 
-  InvoiceStatus = InvoiceStatus;
+  status = Status;
 
   constructor() { }
 
