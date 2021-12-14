@@ -53,7 +53,6 @@
         align-items: center;
         height: 117px;
         width: 100%;
-        // margin-bottom: 10%;
 
         .avatar {
             width: 40px;
@@ -62,8 +61,10 @@
         }
 
         .divider {
-            border-top: 1px solid #494E6E;
             width: 100%;
+            border-bottom: 1px solid #494E6E;
+            background-color: #DADADA;
+            height: 0.5px;
         }
     }
 }

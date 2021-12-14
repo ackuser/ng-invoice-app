@@ -1,0 +1,33 @@
+@import '_colors';
+
+:host {
+    width: 730px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .info {
+        width: 175px;
+        height: 100%;
+        flex-basis: 45%;
+
+        display: flex;
+        flex-direction: column;
+
+        .h3-2-m {
+            color: $secondary-light-2
+        }
+    }
+
+    .filter {
+        width: 128px;
+        height: 15px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}

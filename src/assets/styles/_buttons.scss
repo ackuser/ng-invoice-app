@@ -33,4 +33,5 @@
     @include btn-common($width, $height,
         $background, $backgroundHover, $color);
         justify-content: space-around;
+        padding-right: 8px;
 }

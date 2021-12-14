@@ -1,3 +1,5 @@
+<app-invoice-menu></app-invoice-menu>
+
 <ng-container *ngFor="let invoice of invoices$ | async">
     <app-invoice-row [invoice]="invoice"></app-invoice-row>
 </ng-container>

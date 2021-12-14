@@ -12,23 +12,23 @@
 }
 
 .h1 {
-    @include font(32px, bold, 36px, -1);
+    @include font(32px, bold, 36px, -1px);
 }
 
 .h2 {
-    @include font(20px, bold, 22px, -.63);
+    @include font(20px, bold, 22px, -.63px);
 }
 
 .h3 {
-    @include font(16px, bold, 24px, -.8);
+    @include font(16px, bold, 24px, -.8px);
 }
 
 .h3-2 {
-    @include font(12px, bold, 15px, -.25);
+    @include font(12px, bold, 15px, -.25px);
 }
 
 .h3-2-m {
-    @include font(12px, medium, 15px, -.25);
+    @include font(12px, medium, 15px, -.25px);
 }
 
 @mixin body {

@@ -21,6 +21,7 @@ import localeEs from '@angular/common/locales/es';
 import { InvoicesComponent } from './invoices/invoices.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { InvoiceMenuComponent } from './invoice-menu/invoice-menu.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -39,7 +40,8 @@ registerLocaleData(localeEs);
     InvoiceRowComponent,
     StatusInvoiceComponent,
     InvoicesComponent,
-    SidebarComponent
+    SidebarComponent,
+    InvoiceMenuComponent
   ],
   imports: [
     BrowserModule,
